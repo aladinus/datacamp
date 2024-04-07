@@ -17,23 +17,20 @@ Select the fourth, fifth and sixth observation, corresponding to row indexes 3, 
 import pandas as pd
 cars = pd.read_csv('cars.csv', index_col = 0)
 
-# Print out first 3 observations
-print(cars[0:5])
+print(cars[0:3])
 
 # Print out fourth, fifth and sixth observation
-print(cars[3:7])
+print(cars[3:6])
 
 ##output:
 """
-     cars_per_cap        country  drives_right
-US            809  United States          True
-AUS           731      Australia         False
-JPN           588          Japan         False
-IN             18          India         False
-RU            200         Russia          True
-     cars_per_cap  country  drives_right
-IN             18    India         False
-RU            200   Russia          True
-MOR            70  Morocco          True
-EG             45    Egypt          True
+<script.py> output:
+         cars_per_cap        country  drives_right
+    US            809  United States          True
+    AUS           731      Australia         False
+    JPN           588          Japan         False
+         cars_per_cap  country  drives_right
+    IN             18    India         False
+    RU            200   Russia          True
+    MOR            70  Morocco          True
 """
